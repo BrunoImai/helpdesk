@@ -67,6 +67,8 @@ class TicketStatusUpdate(BaseModel):
 
 
 class MensagemOut(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
     autor: str
     texto: str
     enviada_em: datetime

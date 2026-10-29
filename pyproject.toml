@@ -14,6 +14,10 @@ select = ["E", "W", "F", "I", "N", "UP", "B"]
 # Linhas longas em docstrings/comentários didáticos são aceitas
 ignore = ["E501"]
 
+[tool.ruff.lint.per-file-ignores]
+# Enunciados têm TODO: variáveis ainda não usadas são esperadas
+"**/enunciado_aluno.py" = ["F841"]
+
 [tool.black]
 line-length = 88
 target-version = ["py312"]
