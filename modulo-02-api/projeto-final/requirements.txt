@@ -1,0 +1,9 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic[email]>=2.7
+pydantic-settings>=2.3
+
+# Qualidade de código
+ruff>=0.5
+black>=24.4
+mypy>=1.10

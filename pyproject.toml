@@ -1,0 +1,20 @@
+# Configuração de qualidade para todo o repositório de apoio às videoaulas.
+# (Cada projeto-final tem o seu próprio pyproject.toml, que tem prioridade nele.)
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+extend-exclude = [
+    # Código propositalmente "sujo" da Videoaula 4 (Módulo 1)
+    "modulo-01-alicerce/aula-2-ambientes/videoaula-04-qualidade-e-env/codigo_sujo.py",
+]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "N", "UP", "B"]
+# Linhas longas em docstrings/comentários didáticos são aceitas
+ignore = ["E501"]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+extend-exclude = "codigo_sujo.py"

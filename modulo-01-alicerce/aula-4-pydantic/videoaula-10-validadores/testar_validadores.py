@@ -5,7 +5,6 @@ Execute:  python testar_validadores.py
 """
 
 from pydantic import ValidationError
-
 from ticket_create import TicketCreate
 
 
@@ -29,7 +28,9 @@ base = {
 tentar("1. Válido (e-mail é normalizado para minúsculas)", **base)
 tentar("2. E-mail descartável", **{**base, "email_solicitante": "joao@mailinator.com"})
 tentar("3. E-mail malformado", **{**base, "email_solicitante": "joao-sem-arroba.com"})
-tentar("4. Título com espaços extras", **{**base, "titulo": "   Sem   acesso   à   VPN  "})
+tentar(
+    "4. Título com espaços extras", **{**base, "titulo": "   Sem   acesso   à   VPN  "}
+)
 tentar("5. Tags sujas", **{**base, "tags": [" VPN ", "rede", "vpn", ""]})
 tentar(
     "6. Prioridade ALTA com descrição curta",

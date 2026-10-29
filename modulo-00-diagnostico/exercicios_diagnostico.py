@@ -9,6 +9,7 @@ Rode este arquivo para conferir que todos os gabaritos estão corretos:
     python modulo-00-diagnostico/exercicios_diagnostico.py
 """
 
+
 # ---------------------------------------------------------------------------
 # Questão 1 — Funções e valores padrão
 # O que será impresso?

@@ -5,7 +5,6 @@ Execute:  python testar_ticket_create.py
 """
 
 from pydantic import ValidationError
-
 from ticket_create import TicketCreate
 
 
