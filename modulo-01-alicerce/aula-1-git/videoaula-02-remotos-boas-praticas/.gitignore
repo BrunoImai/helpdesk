@@ -1,0 +1,24 @@
+# Modelo de .gitignore para projetos Python (HelpDesk)
+
+# Ambiente virtual
+.venv/
+venv/
+
+# Segredos
+.env
+
+# Cache e artefatos
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Editor / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

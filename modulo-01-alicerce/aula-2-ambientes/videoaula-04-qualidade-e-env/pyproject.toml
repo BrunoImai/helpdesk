@@ -1,0 +1,16 @@
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+# E/W = pycodestyle, F = pyflakes, I = isort, N = nomes, UP = pyupgrade, B = bugbear
+select = ["E", "W", "F", "I", "N", "UP", "B"]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+ignore_missing_imports = true

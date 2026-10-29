@@ -1,0 +1,16 @@
+# Dependências para rodar TODOS os exemplos do repositório localmente
+pydantic[email]>=2.7
+pydantic-settings>=2.3
+fastapi>=0.115
+uvicorn[standard]>=0.30
+httpx>=0.27
+python-multipart>=0.0.9
+motor>=3.5
+beanie>=1.26
+pyjwt>=2.8
+bcrypt>=4.1
+pytest>=8.2
+pytest-asyncio>=0.23
+ruff>=0.5
+black>=24.4
+mypy>=1.10
