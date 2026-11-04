@@ -8,8 +8,12 @@
 ## Como rodar
 ```powershell
 python enum_e_literal.py
-mypy enum_e_literal.py
+mypy enum_e_literal.py       # esperado: "Success: no issues found"
 ```
+
+> Para ver o `mypy` recusar um valor fora do `Literal`, descomente a linha `abrir_por("whatsapp")` e rode de novo.
+> Com `mypy --strict`, a comparação `Prioridade.ALTA == "alta"` também é sinalizada (`comparison-overlap`); em
+> tempo de execução ela vale `True`, porque `StrEnum` herda de `str`. Não use `--strict` nesta aula.
 
 ## Roteiro de gravação
 1. O problema: `status = "resolvdo"` (erro de digitação silencioso).

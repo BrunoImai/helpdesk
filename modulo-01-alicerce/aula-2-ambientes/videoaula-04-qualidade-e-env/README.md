@@ -19,6 +19,15 @@ copy .env.example .env             # crie o seu .env (NUNCA vai para o Git)
 python demo_env.py
 ```
 
+## O que esperar (testado)
+- `ruff check codigo_sujo.py` aponta 8 problemas (E401, I001, F401 x3, E712, E711, N801).
+- `ruff check --fix` corrige os automáticos (imports); **sobram 3 de propósito**: E712 (`== True`), E711 (`== None`) e
+  N801 (nome da classe). Corrija-os ao vivo (`if urgente:`, `if titulo is None:`, `class Chamado`) para mostrar que
+  o linter **avisa** e o formatter **formata**, mas decisões de lógica são suas.
+- `black` reformata o arquivo (aspas, espaços, linhas em branco).
+- Sem `.env`: `ValidationError ... secret_key Field required`. Com `.env`: a configuração aparece e a chave sai mascarada.
+- Para repetir a demonstração: `git checkout -- codigo_sujo.py` (ou `git restore codigo_sujo.py`) devolve o arquivo sujo.
+
 ## Roteiro de gravação
 1. Abrir `codigo_sujo.py` e rodar `ruff check` (mostrar os códigos F401, E711, E712...).
 2. Rodar `ruff check --fix` e depois `black`; comparar o antes e o depois (`git diff`).
