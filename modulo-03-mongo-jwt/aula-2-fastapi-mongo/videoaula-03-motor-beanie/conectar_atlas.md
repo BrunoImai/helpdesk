@@ -21,6 +21,5 @@
 - Se vazar, apague o usuário em *Database Access* e crie outro.
 
 **Alternativa local (sem conta nenhuma)**
-```powershell
-docker run -d --name helpdesk-mongo -p 27017:27017 mongo:7
-```
+Instale o *MongoDB Community Server* (<https://www.mongodb.com/try/download/community>) e use
+`MONGO_URI=mongodb://localhost:27017` no `.env`.

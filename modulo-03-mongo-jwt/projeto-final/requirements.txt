@@ -18,4 +18,5 @@ ruff>=0.5
 black>=24.4
 mypy>=1.10
 httpx>=0.27
+pytest>=8.2               # testes da Aula 5
 mongomock-motor>=0.0.30   # banco falso em memória usado só no smoke_test.py

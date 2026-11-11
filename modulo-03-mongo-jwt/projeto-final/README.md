@@ -17,6 +17,7 @@ app/
   routers/tickets.py         # endpoints de chamados
   routers/auth.py            # /auth/login e /auth/eu
 scripts/criar_agente.py      # cria um atendente no banco
+tests/test_main.py           # testes básicos (Pytest + TestClient), sem banco de dados
 smoke_test.py                # percorre a API inteira com um Mongo FALSO (sem instalar nada)
 ```
 
@@ -29,7 +30,7 @@ pip install -r requirements.txt
 copy .env.example .env
 ```
 1. Edite o `.env`:
-   - `MONGO_URI`: use o Mongo local (`docker run -d -p 27017:27017 mongo:7`) **ou** a connection string do MongoDB Atlas (guia na Videoaula 3).
+   - `MONGO_URI`: use a connection string do MongoDB Atlas (guia na Videoaula 3) **ou** um MongoDB instalado na sua máquina (`mongodb://localhost:27017`).
    - `SECRET_KEY`: gere com `python -c "import secrets; print(secrets.token_hex(32))"`.
 2. Crie um atendente: `python -m scripts.criar_agente "Ana Souza" ana@helpdesk.com`
 3. Suba a API: `uvicorn app.main:app --reload`
@@ -51,10 +52,18 @@ Sem Mongo à mão? `python smoke_test.py` roda todo o fluxo com um banco falso e
 | PATCH | `/tickets/{id}/status` | token | Altera o status |
 | DELETE | `/tickets/{id}` | token | Apaga |
 
+## Rodando os testes (Aula 5)
+```powershell
+pytest            # na pasta projeto-final; esperado: 9 passed
+pytest -k 401     # só os testes de "sem token"
+```
+Os testes não usam MongoDB: cobrem a API no ar, dados inválidos (`422`) e rotas protegidas sem token (`401`).
+
 ## Desafio hands-on do Módulo 3 (checklist)
 - [x] API conectada ao cluster MongoDB (`MONGO_URI` no `.env`)
 - [x] CRUD completo persistido no banco
 - [x] Rotas de edição de status (e demais rotas do suporte) trancadas com token JWT válido
+- [x] Testes automáticos básicos passando no Pytest (`tests/test_main.py`)
 
 ## Segurança: lembretes
 - Nunca versione o `.env`. Se uma senha/connection string vazar, **troque-a imediatamente**.
