@@ -15,6 +15,6 @@ Teste: `/tickets?skip=0&limit=2`, `/tickets/1` e `/admin/resumo` com e sem o cab
 1. Problema: `skip` e `limit` repetidos em várias rotas.
 2. Função de dependência `paginacao()` + `Depends(paginacao)`.
 3. Dependência como **classe** (`Paginacao`) e `Annotated[..., Depends()]` para reutilizar o tipo.
-4. Dependência de **serviço** (`get_ticket_service`), a base para trocar a implementação nos testes (Módulo 4).
+4. Dependência de **serviço** (`get_ticket_service`), a base para trocar a implementação nos testes (Módulo 3, Aula 5).
 5. Dependência que **bloqueia** a rota (`verificar_chave`): preparação para a autenticação JWT do Módulo 3.
 6. Dependências podem depender de outras dependências.

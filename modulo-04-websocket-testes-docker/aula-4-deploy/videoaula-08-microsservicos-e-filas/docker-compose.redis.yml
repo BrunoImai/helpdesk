@@ -1,7 +1,0 @@
-# VIDEOAULA 8 (opcional) — Redis local para o exemplo fila_redis_opcional.py
-# Não validado no ambiente de preparação (sem Docker).
-services:
-  redis:
-    image: redis:7-alpine
-    ports:
-      - "6379:6379"

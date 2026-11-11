@@ -13,9 +13,8 @@ os.environ.setdefault("SECRET_KEY", "chave-somente-para-testes-0123456789abcdef"
 os.environ.setdefault("MONGO_URI", "mongodb://banco-que-nunca-sera-usado:27017")
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "projeto-final"))
 
-from fastapi.testclient import TestClient  # noqa: E402
-
 from app.main import app  # noqa: E402
+from fastapi.testclient import TestClient  # noqa: E402
 
 client = TestClient(app)
 

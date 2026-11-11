@@ -18,5 +18,5 @@ Observe no terminal do `uvicorn` as mensagens de log "Enviando e-mail..." aparec
 1. Problema: enviar e-mail leva 2 s e o usuário fica esperando a tela.
 2. Rota `/tickets-lento`: o `await enviar_email(...)` atrasa a resposta.
 3. Rota `/tickets`: `background_tasks.add_task(enviar_email, ...)`. A resposta sai na hora.
-4. Limitações: se o servidor cair, a tarefa se perde. Para algo crítico, usar filas (Módulo 4, Redis/RabbitMQ/Celery).
+4. Limitações: se o servidor cair, a tarefa se perde. Para algo crítico, usar filas de mensagens (Redis, RabbitMQ, Celery), assunto fora do escopo desta trilha.
 5. Funciona com função `def` ou `async def`.

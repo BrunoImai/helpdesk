@@ -22,9 +22,8 @@ os.environ.setdefault("MONGO_URI", "mongodb://banco-que-nunca-sera-usado:27017")
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "projeto-final"))
 
 import pytest  # noqa: E402
-from fastapi.testclient import TestClient  # noqa: E402
-
 from app.main import app  # noqa: E402
+from fastapi.testclient import TestClient  # noqa: E402
 
 # Sem `with`: o lifespan não roda, então nada tenta conectar no banco
 client = TestClient(app)

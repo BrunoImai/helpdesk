@@ -55,7 +55,7 @@ Os scripts de videoaula (arquivos `.py` soltos) rodam direto: `python caminho/do
 | Avaliações | Gabaritos | [`avaliacoes`](modulo-02-api/avaliacoes) |
 | Desafio | Projeto final do módulo | [`projeto-final`](modulo-02-api/projeto-final) |
 
-### Módulo 3 — Guardando Chamados e Trancando Portas (MongoDB e JWT)
+### Módulo 3 — Guardando Chamados, Trancando Portas e Testando (MongoDB, JWT e Pytest)
 | Aula | Videoaula | Pasta |
 |---|---|---|
 | 1 NoSQL | V1 SQL vs. NoSQL | [`aula-1-nosql/videoaula-01-sql-vs-nosql`](modulo-03-mongo-jwt/aula-1-nosql/videoaula-01-sql-vs-nosql) |
@@ -68,25 +68,11 @@ Os scripts de videoaula (arquivos `.py` soltos) rodam direto: `python caminho/do
 | 4 Autenticação | V8 Anatomia do JWT | [`aula-4-autenticacao/videoaula-08-anatomia-jwt`](modulo-03-mongo-jwt/aula-4-autenticacao/videoaula-08-anatomia-jwt) |
 | 4 Autenticação | V9 Login e emissão do token | [`aula-4-autenticacao/videoaula-09-login-e-token`](modulo-03-mongo-jwt/aula-4-autenticacao/videoaula-09-login-e-token) |
 | 4 Autenticação | V10 Rotas protegidas | [`aula-4-autenticacao/videoaula-10-rotas-protegidas`](modulo-03-mongo-jwt/aula-4-autenticacao/videoaula-10-rotas-protegidas) |
+| 5 Testes automáticos | V11 Pirâmide de testes | [`aula-5-testes/videoaula-11-piramide-de-testes`](modulo-03-mongo-jwt/aula-5-testes/videoaula-11-piramide-de-testes) |
+| 5 Testes automáticos | V12 Pytest e TestClient | [`aula-5-testes/videoaula-12-pytest-testclient`](modulo-03-mongo-jwt/aula-5-testes/videoaula-12-pytest-testclient) |
+| 5 Testes automáticos | V13 Erros e rotas protegidas | [`aula-5-testes/videoaula-13-erros-e-rotas-protegidas`](modulo-03-mongo-jwt/aula-5-testes/videoaula-13-erros-e-rotas-protegidas) |
 | Avaliações | Gabaritos | [`avaliacoes`](modulo-03-mongo-jwt/avaliacoes) |
 | Desafio | Projeto final do módulo | [`projeto-final`](modulo-03-mongo-jwt/projeto-final) |
-
-### Módulo 4 — Tempo real, testes e deploy (WebSockets, Pytest e Docker)
-| Aula | Videoaula | Pasta |
-|---|---|---|
-| 1 Tempo real | V1 WebSocket vs. HTTP | [`aula-1-websocket/videoaula-01-websocket-vs-http`](modulo-04-websocket-testes-docker/aula-1-websocket/videoaula-01-websocket-vs-http) |
-| 1 Tempo real | V2 Connection Manager | [`aula-1-websocket/videoaula-02-connection-manager`](modulo-04-websocket-testes-docker/aula-1-websocket/videoaula-02-connection-manager) |
-| 1 Tempo real | V3 Sala de chat do chamado | [`aula-1-websocket/videoaula-03-sala-de-chat`](modulo-04-websocket-testes-docker/aula-1-websocket/videoaula-03-sala-de-chat) |
-| 2 Testes | V4 Pirâmide de testes | [`aula-2-testes/videoaula-04-piramide-de-testes`](modulo-04-websocket-testes-docker/aula-2-testes/videoaula-04-piramide-de-testes) |
-| 2 Testes | V5 Pytest e TestClient | [`aula-2-testes/videoaula-05-pytest-testclient`](modulo-04-websocket-testes-docker/aula-2-testes/videoaula-05-pytest-testclient) |
-| 3 Isolamento | V6 Mocks | [`aula-3-isolamento/videoaula-06-mocks`](modulo-04-websocket-testes-docker/aula-3-isolamento/videoaula-06-mocks) |
-| 3 Isolamento | V7 Erros e rotas autenticadas | [`aula-3-isolamento/videoaula-07-erros-e-rotas-autenticadas`](modulo-04-websocket-testes-docker/aula-3-isolamento/videoaula-07-erros-e-rotas-autenticadas) |
-| 4 Deploy | V8 Microsserviços e filas | [`aula-4-deploy/videoaula-08-microsservicos-e-filas`](modulo-04-websocket-testes-docker/aula-4-deploy/videoaula-08-microsservicos-e-filas) |
-| 4 Deploy | V9 Containers | [`aula-4-deploy/videoaula-09-containers`](modulo-04-websocket-testes-docker/aula-4-deploy/videoaula-09-containers) |
-| 4 Deploy | V10 Dockerfile | [`aula-4-deploy/videoaula-10-dockerfile`](modulo-04-websocket-testes-docker/aula-4-deploy/videoaula-10-dockerfile) |
-| 4 Deploy | V11 Docker Compose | [`aula-4-deploy/videoaula-11-docker-compose`](modulo-04-websocket-testes-docker/aula-4-deploy/videoaula-11-docker-compose) |
-| Avaliações | Gabaritos | [`avaliacoes`](modulo-04-websocket-testes-docker/avaliacoes) |
-| Desafio | Projeto final do módulo | [`projeto-final`](modulo-04-websocket-testes-docker/projeto-final) |
 
 ## Convenções
 

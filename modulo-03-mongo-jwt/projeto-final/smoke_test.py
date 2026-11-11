@@ -3,7 +3,7 @@
 Usa o `mongomock-motor` (banco falso em memória) no lugar do Motor real.
 Execute (na pasta projeto-final):
     python smoke_test.py
-Os testes automatizados de verdade entram no Módulo 4.
+Os testes automatizados de verdade estão em tests/ (Aula 5).
 """
 
 import os

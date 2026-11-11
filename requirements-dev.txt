@@ -12,11 +12,10 @@ beanie>=1.30,<2
 pyjwt>=2.8
 bcrypt>=4.1
 cryptography>=42        # só para a demonstração de criptografia (Videoaula 7)
-mongomock-motor>=0.0.30 # banco falso em memória (smoke tests e testes do Módulo 4)
+mongomock-motor>=0.0.30 # banco falso em memória (smoke tests)
 
-# Módulo 4
+# Testes (Módulo 3, Aula 5)
 pytest>=8.2
-pytest-asyncio>=0.23
 
 # Qualidade de código
 ruff>=0.5

@@ -2,7 +2,7 @@
 
 Execute (na pasta projeto-final):
     python smoke_test.py
-Os testes automatizados de verdade entram no Módulo 4.
+Os testes automatizados de verdade entram no Módulo 3 (Aula 5).
 """
 
 from fastapi.testclient import TestClient

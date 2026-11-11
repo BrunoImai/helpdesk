@@ -18,9 +18,8 @@ os.environ.setdefault("MONGO_URI", "mongodb://banco-que-nunca-sera-usado:27017")
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "projeto-final"))
 
 import pytest  # noqa: E402
-from fastapi.testclient import TestClient  # noqa: E402
-
 from app.main import app  # noqa: E402
+from fastapi.testclient import TestClient  # noqa: E402
 
 client = TestClient(app)
 
@@ -33,7 +32,9 @@ def test_listar_chamados_sem_token_devolve_401() -> None:
 
 
 def test_token_invalido_tambem_devolve_401() -> None:
-    resposta = client.get("/tickets", headers={"Authorization": "Bearer token-invalido"})
+    resposta = client.get(
+        "/tickets", headers={"Authorization": "Bearer token-invalido"}
+    )
 
     assert resposta.status_code == 401
 
